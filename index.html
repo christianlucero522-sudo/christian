@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+   <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#4b4b4d;
+    color:#333;
+    line-height:1.6;
+}
+
+
+header{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin:10px 0;
+}
+nav{
+    border-radius:10px;
+    background-color:#7f838a;
+    justify-content:center;
+    margin: 0 auto;
+    padding:10px;
+    width:fit-content;
+}
+
+nav{
+    margin-top:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#2563eb,#38bdf8);
+    color:white;
+    padding:20px;
+}
+
+.hero h2{
+    font-size:45px;
+}
+
+.hero p{
+    max-width:600px;
+    margin:20px auto;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:white;
+    color:#2563eb;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1f2937;
+    color:white;
+}
+
+
+.card{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(2,4fr);
+    gap:20px;
+}
+
+.skill{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:25px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-8px);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:#f8f8f8;
+    padding:20px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.project:hover{
+    transform:scale(1.03);
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:30px;
+    }
+
+    .hero{
+        height:auto;
+        padding:80px 20px;
+    }
+
+    .hero h2{
+        font-size:32px;
+    }
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+}
+   </style>
+</head>
+<body>
+
+<header>
+    <h1>Hi I am Christian C. Lucero </h1>
+    <p>Student | Future Web Developer</p>
+<section class="nav">
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    </section>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Hello, I'm Christian 👋</h2>
+        <p>
+            I am a passionate student learning HTML, CSS, and JavaScript.
+            I enjoy building simple and responsive websites.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</section>
+
+<section id="about" class="card">
+    <h2>About Me</h2>
+
+    <p>
+        I am currently studying Information Technology.
+        I enjoy learning programming, designing websites,
+        and improving my coding skills through projects.
+    </p>
+</section>
+
+<section id="skills" class="card">
+    <h2>Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">
+            <h3>HTML</h3>
+        </div>
+
+        <div class="skill">
+            <h3>CSS</h3>
+        </div>
+
+        <div class="skill">
+            <h3>JavaScript-currently learning</h3>
+        </div>
+
+        <div class="skill">
+            <h3>Responsive Design</h3>
+        </div>
+
+         <div class="skill">
+            <h3>Minor VB.net skills</h3>
+        </div>
+
+
+    </div>
+</section>
+
+<section id="projects" class="card">
+
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Tourism Website</h3>
+            <p>A responsive tourism website created using HTML and CSS.</p>
+        </div>
+
+        <div class="project">
+            <h3>Car rental System</h3>
+            <p>A simple car rental system built using VB.net with a database using Ms Access.</p>
+        </div>
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio showcasing my projects and skills.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="card">
+
+    <h2>Contact</h2>
+
+    <p>Email: christianlucero522@email.com</p>
+    <p>Phone: +63 905 864 2483</p>
+
+</section>
+
+<footer>
+    <p>© 2026 Christian C. Lucero | Student Portfolio</p>
+</footer>
+
+</body>
+</html>
